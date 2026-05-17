@@ -1,0 +1,23 @@
+---MANEJO---
+
+---FLUJO DEL TRABAJO---
+MODELS -> ADMIN -> FORMS -> VIEWS -> URLS
+
+---FORMULARIOS---
+POST -> Se usa cuando los usuarios envian los datos al sistema/proyecto
+
+GET <- Resivo la información por parte del sistema/proyecto
+
+
+____ cracion de vistas  ______
+ VIEWS -> URL
+
+
+ -------vista editar-------
+   #forma 2 de llamar un registro
+   # estudiante = Student.objects.get(pk=pk) #sirve para buscar un resgitro que se sabe que existe, se cae si no esta
+    #forma 3 de llamar un registro
+    #estudiante = Student.objects.filter(pk=pk) #no se cae, solo envia un objeto vacio
+
+ ---eliminar---
+ también se agg dos parametros, request y pk
