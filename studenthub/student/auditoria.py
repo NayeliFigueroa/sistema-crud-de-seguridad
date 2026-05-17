@@ -94,6 +94,7 @@ def audit_crud(action: str, resource: str):
                     "params": kwargs,
                     "payload": _safe_post_data(request),
                     "duration_ms": duration_ms,
+                    "security_note": "Registro auditado - Datos sensibles protegidos por mascara.",
                 }
 
                 if error_message:
